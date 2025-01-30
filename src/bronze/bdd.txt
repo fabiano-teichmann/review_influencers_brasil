@@ -1,0 +1,63 @@
+Given review 'No começo ele é meio tímido, mas vai se soltando e conquista todo mundo no set. É empenhado, prestativo e atencioso. Vale cada centavo cobrado, pois entrega qualidade e simpatia'
+Then classify personality with positive and professional with professional
+Given review 'terrível! ela não cumpre prazos e mente para quem for trabalhar com ela, descaradamente sobre as coisas. mas o tenha muuuuuita antecedência pior de tudo é a sua assessora que é pra pedir as coisas pois ela atrasa 1 segundo semestre de 2024 EXTREMAMENTE grossa e arrogante.'
+
+
+Trabalhar com a Preta é incrível! Ela entrega em todos os sentidos, carisma, conteúdo, números, engajamento. Além de pessoalmente ser uma fofa!
+
+Terrível... Não trabalha com o que foi combinado! Some não dar satisfação, não entrega! Parece q a marca está fazendo um favor para ele em pagar muitoooo caro pra fazer o básico de um influenciador! Não respeita a equipe! Porem tem números!
+
+Insuportável. Não aceita ajustes mesmo que sejam finos. O Valor era altissímo, mais de 600k e a bonita nao respeitava nada. NADA! Postou mais de 2 publis no mesmo dia. No shoot ela parecia ser razoavel mas na hora de postar, que inferno.
+
+Excelente, Patricio sempre propõe de
+reclamando de tudo, tudo.
+forma pró ativa como a marca consegue
+TUDOOOOOO! Não houve atraso, não
+encaixar com seu tipo de conteúdo,
+era a comida que estava ruim, não era
+cumpre prazos e direcionais
+
+
+PESSÍMO. Não cumpre prazo nenhum e
+gera estresse no time com sua
+assessora que não tem profissionalismo.
+Não recomendo!
+
+
+Ela ainda ta com a Ju pedrosa?? PQ
+MEU DEUSSSS! Ela manda áudio
+brigaando, falando que a Gi não tem
+agenda que não sei o que, que não vai
+refazer etc. Muito dificil...
+
+
+Desconfortável! Realizamos uma
+transmissão ao vivo com ela e toda vez
+que outra mulher entrava ao vivo, a
+Samantha fazia um escândalo e
+começava a falar mal das outras para a
+produção, sugerindo diversas vezes que
+substituíssem as outras por ela. Criou
+uma rivalidade feminina da cabeça dela
+e tentou prejudicar várias. Se mostrou
+colaborativa e disposta com a equipe de
+produção mas realmente deixou todos
+desconfortáveis com esses comentários
+(Pessoal negativo, profissional misto)
+
+
+Trabalhar com a Renata é simplesmente
+incrível. Sempre solícita, segue o
+briefing e troca com a equipe os
+melhores caminhos e sempre tratando
+todo mundo com muita educação. A
+mananger dela trabalha junto e ajuda
+em tudo. Muito tranquilo
+
+Ele é demais. Super alto astral,
+carismático, ele ocupa os espaço e faz a
+produção ser muito mais leve. Cria
+junto, pega texto fácil (a fama de lesado
+não faz jus, ele é excelente) e não tem
+tempo ruim. Entrega muito além do
+escopo e se dedica super à marca.
