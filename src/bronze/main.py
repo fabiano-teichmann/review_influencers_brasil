@@ -37,6 +37,6 @@ class SentimentClassifierGPT:
         if not os.path.isdir(dst_path):
             os.mkdir(dst_path)
         dst_file = os.path.join(dst_path, os.path.split(self.path_file)[-1])
-        df_final = pd.merge(df, df_response, on="nickname", how="left")
+        df_final = pd.merge(df_response, df, on="nickname", how="inner")
         df_final.to_csv(dst_file, index=False, sep=";")
         logger.info(f"Salved with success file: {dst_file}")
