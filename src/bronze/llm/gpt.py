@@ -5,13 +5,14 @@ import openai
 import pandas as pd
 
 from src.utils.dto import ConfigModel, GPTPrompt
+from src.utils.logger import logger
 
 
 def call_gpt(config: ConfigModel, messages: List) -> pd.DataFrame:
     try:
         GPTPrompt(messages=messages)
     except Exception as e:
-        print(f" Invalid messages {messages}")
+        logger.error(f" Invalid messages {messages}")
         raise e
 
     resp = openai.chat.completions.create(
@@ -20,7 +21,6 @@ def call_gpt(config: ConfigModel, messages: List) -> pd.DataFrame:
     )
 
     response = resp.choices[0].message.content.strip()
-
-
+    logger.info("Success response GPT")
     data = io.StringIO(response)
     return pd.read_json(data)

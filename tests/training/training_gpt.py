@@ -1,4 +1,5 @@
 from src.bronze.main import SentimentClassifierGPT
+from src.utils.logger import logger
 
 
 def test_training_gpt(version: str):

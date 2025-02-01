@@ -5,6 +5,7 @@ import pandas as pd
 from src.bronze.llm.gpt import call_gpt
 from src.bronze.prompt.prompt import Prompt
 from src.utils.dto import ConfigModel
+from src.utils.logger import logger
 
 
 class SentimentClassifierGPT:
@@ -26,6 +27,7 @@ class SentimentClassifierGPT:
         self.__save_data(df=df, df_response=df_response)
 
     def __load_data(self):
+        logger.info(f"load file {self.path_file} ")
         df = pd.read_csv(self.path_file)
         df.columns = ["datetime", "name", "nickname", "evaluation_note", "date_work", "review", "recommendation"]
         return df
@@ -37,3 +39,4 @@ class SentimentClassifierGPT:
         dst_file = os.path.join(dst_path, os.path.split(self.path_file)[-1])
         df_final = pd.merge(df, df_response, on="nickname", how="left")
         df_final.to_csv(dst_file, index=False, sep=";")
+        logger.info(f"Salved with success file: {dst_file}")
