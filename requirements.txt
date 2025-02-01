@@ -2,3 +2,4 @@ tabula-py
 openai
 pandas
 pydantic
+pytest
