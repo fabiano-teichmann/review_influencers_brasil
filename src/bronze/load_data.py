@@ -4,8 +4,8 @@ from tabula import read_pdf
 import pandas as pd
 
 def generate_csv():
-    pdf_path = "data/Planilha_de_influenciadores_respostas_Google_Drive_xlsx_Planilha.pdf"
-    csv_path = "data/influencers_reviews.csv"
+    pdf_path = "../../data/bronze/data/Planilha_de_influenciadores_respostas_Google_Drive_xlsx_Planilha.pdf"
+    csv_path = "../../data/bronze/data/influencers_reviews.csv"
 
     # df = read_pdf(pdf_path, pages=1, pandas_options={"header": 1})
     tables = read_pdf(pdf_path, pages="all", lattice=True, multiple_tables=True)

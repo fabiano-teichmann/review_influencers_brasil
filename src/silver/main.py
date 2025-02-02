@@ -39,7 +39,7 @@ class SentimentClassifier:
         return df
 
     def __create_folder_if_not_exist(self, prompt: Prompt) -> str:
-        path_base = os.path.join("src/silver/data/", prompt.name_prompt)
+        path_base = os.path.join("data/silver/data/", prompt.name_prompt)
         if not os.path.isdir(path_base):
             os.mkdir(path_base)
         path_base = os.path.join(path_base, self.model.model)

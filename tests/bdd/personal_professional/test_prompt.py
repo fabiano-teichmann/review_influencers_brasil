@@ -8,7 +8,7 @@ class TestPrompt:
     @pytest.fixture(autouse=True)
     def setup(self):
         """Carrega o DataFrame antes de cada teste"""
-        self.df_silver = pd.read_csv("src/silver/data/personal_professional/gpt-4o-mini_v2/training.csv", delimiter=";")
+        self.df_silver = pd.read_csv("data/silver/data/personal_professional/gpt-4o-mini_v2/training.csv", delimiter=";")
         self.df_raw = pd.read_csv("tests/data/training.csv")
 
     def test_given_llm_receives_one_record_invalid_then_should_return_one_less(self):
