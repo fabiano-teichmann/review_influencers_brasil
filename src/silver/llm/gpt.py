@@ -17,7 +17,8 @@ def call_gpt(config: ConfigModel, messages: List) -> pd.DataFrame:
 
     resp = openai.chat.completions.create(
         model=config.model,
-        messages=messages
+        messages=messages,
+        temperature=config.temperature
     )
 
     response = resp.choices[0].message.content.strip()

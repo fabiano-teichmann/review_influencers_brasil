@@ -24,3 +24,4 @@ class GPTPrompt(BaseModel):
 
 class ConfigModel(BaseModel):
     model: Literal["gpt-4o-mini", "gpt-3.5-turbo"] = Field("gpt-4o-mini",  description="LLM model")
+    temperature: int = 0
