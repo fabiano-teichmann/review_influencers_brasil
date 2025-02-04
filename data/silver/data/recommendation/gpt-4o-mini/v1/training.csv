@@ -1,10 +1,10 @@
-hash;personality;professional;datetime;name;nickname;evaluation_note;date_work;review;recommendation
-f9f27df86a033ce20a3ccd9c6eb9fe5927ff0a98c50d8df69562c4068a3a5a22;positivo;positivo;11/10/24 18:50;Gil do Vigor;@gildovigor;10;jun.-21;"No começo ele é meio tímido, mas vai
+hash;recommends_influencer;datetime;name;nickname;evaluation_note;date_work;review;recommendation
+f9f27df86a033ce20a3ccd9c6eb9fe5927ff0a98c50d8df69562c4068a3a5a22;recomendado;11/10/24 18:50;Gil do Vigor;@gildovigor;10;jun.-21;"No começo ele é meio tímido, mas vai
 se soltando e conquista todo mundo no
 set. É empenhado, prestativo e
 atencioso. Vale cada centavo cobrado,
 pois entrega qualidade e simpatia.";
-5628dd09e410311f9197473c51964e72bc71b51a0a1227f236821689e636d3f5;negativo;negativo;11/11/24 11:44;"Mohamad (ex-
+5628dd09e410311f9197473c51964e72bc71b51a0a1227f236821689e636d3f5;não recomendado;11/11/24 11:44;"Mohamad (ex-
 masterchef)";@mohindi;4;2023;"Um caos, simplesmente impossível
 conseguir agenda para que ele publique,
 não faz uma unidade de entrega fora do
@@ -27,7 +27,7 @@ resultados, principalmente em
 engajamento e conversão, com
 um fee bem mais atraente. Fujam
 desse moço."
-0d01fab8c01ea4081015bdf9d2579d59be509b903614c43ef49e44cbbeac4487;misto;neutro;11/11/24 11:52;"Gabriela Bailas (Física e
+0d01fab8c01ea4081015bdf9d2579d59be509b903614c43ef49e44cbbeac4487;recomendado com relvas;11/11/24 11:52;"Gabriela Bailas (Física e
 afins)";@bibibailas;8;abr.-24;"A entrega em si foi boa, entregou o que
 foi combinado, único ponto negativo de
 estresse foi a assessora que parecia
@@ -39,24 +39,24 @@ exaustivo. Mas a entrega em si deu
 certo e gerou bons resultados!";"Tenha paciência que o conteúdo
 será bom, a assessora que é
 perdida"
-b333c81159de642edd0b5a1e0d7f3a2fa1a96c68b8ca169c2b18a2042376dbe7;negativo;negativo;11/11/24 14:52;Paola Antonini;@paola_antonini - IG;1;segundo semestre de 2024;"terrível! ela não cumpre prazos e mente
+b333c81159de642edd0b5a1e0d7f3a2fa1a96c68b8ca169c2b18a2042376dbe7;não recomendado;11/11/24 14:52;Paola Antonini;@paola_antonini - IG;1;segundo semestre de 2024;"terrível! ela não cumpre prazos e mente
 descaradamente sobre as coisas. mas o
 pior de tudo é a sua assessora que é
 EXTREMAMENTE grossa e arrogante.";"para quem for trabalhar com ela,
 tenha muuuuuita antecedência
 pra pedir as coisas pois ela atrasa
 demais."
-41ae6b20b5bdb6eab907c0737d97911fda612692af16644143c1e75a3a46fb3e;positivo;positivo;11/11/24 18:06;Lara Cunha;@pear.lara;9;fev.-24;"Uma grande querida! Traz ideias legais
+41ae6b20b5bdb6eab907c0737d97911fda612692af16644143c1e75a3a46fb3e;recomendado;11/11/24 18:06;Lara Cunha;@pear.lara;9;fev.-24;"Uma grande querida! Traz ideias legais
 nas reuniões de briefing, aceita
 melhorias e ajustes numa boa e vem
 melhorando o conteúdo pras marcas
 cada vez mais.";"Precisando de influ de lifestyle pra
 público feminino jovem, é ela!"
-9118a2f834593ec39c3fe91113a8fb017a540c8e7b05ab00b349c7fd89e02276;neutro;neutro;11/11/24 18:11;Lucas Barreto;@barretovs - ig;6;2023;"Pressão mais baixa que a minha, era
+9118a2f834593ec39c3fe91113a8fb017a540c8e7b05ab00b349c7fd89e02276;indefinido;11/11/24 18:11;Lucas Barreto;@barretovs - ig;6;2023;"Pressão mais baixa que a minha, era
 difícil entregar algo criativo. Mas
 acredito que deva ter melhorado.";"Envie o direcional com roteiro já
 aprovado na reunião de briefing."
-4e98926c9356ac0af837da8ac2816ed5d72829e9b2b2229321c9e42c5d315c81;positivo;positivo;1/23/25 11:29;Carol Rocha;@tchulim - Instagram;9;mai.-23;"Muito bom! Super criativa, entendeu o
+4e98926c9356ac0af837da8ac2816ed5d72829e9b2b2229321c9e42c5d315c81;recomendado;1/23/25 11:29;Carol Rocha;@tchulim - Instagram;9;mai.-23;"Muito bom! Super criativa, entendeu o
 briefing e trouxe sua criatividade para o
 conteúdo da marca. O alcance não é
 gigante, mas compensa na qualidade da
@@ -69,7 +69,7 @@ considerar suas entregas dentro
 da campanha de mídia (o que
 deveria ser padrão pra qualquer
 ação com criadores, né?)"
-dcdb935c8f65f166066640939793e25c6496029019cdfe9456fc31549717c971;negativo;negativo;1/23/25 11:29;Blogueirinha;blogueirinha;3;2024;"Desesperador!!! Tudo precisa ser do
+dcdb935c8f65f166066640939793e25c6496029019cdfe9456fc31549717c971;não recomendado;1/23/25 11:29;Blogueirinha;blogueirinha;3;2024;"Desesperador!!! Tudo precisa ser do
 jeito da gata e a equipe dela não ajuda
 em nada, só complicam ainda mais o
 que já foi alinhado e combinado em
@@ -79,7 +79,7 @@ menos e se for ter qualquer set com
 ela.... Preparem-se pra pagar extra de
 locação e equipe.";"Deixem tudo alinhado em
 proposta e escopo, tudo mesmo!"
-1127d5c097c932b65fda95b37d52dd8912b1e1e94a396c6edda626e84e4b456b;positivo;positivo;1/23/25 11:29;Vinicius Senno;Vinisenno;10;2024/2025;"EXTRAORDINÁRIO!
+1127d5c097c932b65fda95b37d52dd8912b1e1e94a396c6edda626e84e4b456b;recomendado;1/23/25 11:29;Vinicius Senno;Vinisenno;10;2024/2025;"EXTRAORDINÁRIO!
 O garoto tem uma qualidade impecável
 de entrega!
 Incrível!! Cumpre prazos!!";"Tem muito engajamento e o
@@ -88,14 +88,14 @@ O RETORNO É MUITO BOM
 Assessoria e o proprio Vini são
 incríveis!!
 AMEI trabalhar com eles!"
-e55d3598964e531273e6cc5ec5c81821622a072861138983102805b6dd728643;positivo;positivo;1/23/25 11:30;Lucas Lima;@lucas.lima;10;2022/2023 e 2024;"ELE É ÓTIMOOO! Se dedica ao roteiro,
+e55d3598964e531273e6cc5ec5c81821622a072861138983102805b6dd728643;recomendado;1/23/25 11:30;Lucas Lima;@lucas.lima;10;2022/2023 e 2024;"ELE É ÓTIMOOO! Se dedica ao roteiro,
 veste a camisa da marca e é SUPER
 simpático.";Contrateem
-bfca49c59ebfbd32584e090bdda78db2ed6a254c60cbcbfe753cf0465997cc25;negativo;negativo;1/23/25 11:33;Camila Loures;@camilaloures;1;2023;"HORRÍVEL. Ela na publi foi a mesma
+bfca49c59ebfbd32584e090bdda78db2ed6a254c60cbcbfe753cf0465997cc25;não recomendado;1/23/25 11:33;Camila Loures;@camilaloures;1;2023;"HORRÍVEL. Ela na publi foi a mesma
 coisa que nada. Um boneco de posto se
 mexendo, roteiro péssimo...";"Gastem seu dinheiro com outra
 pessoa"
-9fc9a7d2ecc659b7fae255d75110e89be75df0b0074c12a7a6cf92876f2ddd0e;negativo;negativo;1/23/25 11:33;Bruna Marquezine;@brunamarquezine;1;2022;"Mal assessorada, faz apenas o mínimo
+9fc9a7d2ecc659b7fae255d75110e89be75df0b0074c12a7a6cf92876f2ddd0e;não recomendado;1/23/25 11:33;Bruna Marquezine;@brunamarquezine;1;2022;"Mal assessorada, faz apenas o mínimo
 e muito mal feito. Não lê brief, faz as
 entregas completamente
 desorganizadas e amadoras, teve publi
@@ -107,14 +107,14 @@ consegue sequer compreender uma
 cláusula simples.";"Não contratem, tem fama mas fica
 devendo no profissionalismo e
 entregas."
-66407f522dd4e6df2fb531f405b31b3955b03763929c40286fd223273e173768;negativo;negativo;1/23/25 11:33;livia nunes;@livia;3;2024;"péssima. equipe desorganizada. não
+66407f522dd4e6df2fb531f405b31b3955b03763929c40286fd223273e173768;não recomendado;1/23/25 11:33;livia nunes;@livia;3;2024;"péssima. equipe desorganizada. não
 segue briefing e entrega um conteúdo
 bem qualquer coisa. além de números
 super baixos.";"não contratem. da para pagar
 gente muito mais legal com o
 valor que ela cobra com entrega e
 resultados mtos melhores."
-4c279ec5cf3f69273312fcae650ba47f864f961682798cd37afba82c56a951f6;indefinido;indefinido;1/23/25 13:39;Carla Diaz;carladiaz;4;2021;"fAredepqeusaendicartdemente demçãeo  fnaozteárv eulm, s boonmst rtarar empre aboa unalhso dos
+4c279ec5cf3f69273312fcae650ba47f864f961682798cd37afba82c56a951f6;indefinido;1/23/25 13:39;Carla Diaz;carladiaz;4;2021;"fAredepqeusaendicartdemente demçãeo  fnaozteárv eulm, s boonmst rtarar empre aboa unalhso dos
 produtos folios,a enldao é
 mEaprianro uuvcmeioiatsa apdmuorra do contextobealni.  ptAeap rora ob uvremieitfaoin updrao fcisoslliaobn apla, roa marca de
 
@@ -126,7 +126,7 @@ dações.orcioe p nead éir
 odd ierepestotaoismq fueiceno tmeu  ápcxoroibmpraorn dcdieoon saads aea sB dtaotc uiora
 dnvaoi Ll omar teteerxc oparadbroiat.a enntec hqeure a g sausato gue plaadrae irfaaz, er
 eo xvtírdaepoo.lando o saldo limite combinado.";
-7fba6c76fd67adb116953efbc43f61f76d950650861cf91994d79dc07099afd0;positivo;neutro;1/23/25 13:46;Thaiga;@thaigao - IG;6;2024;"ela é muito criativa, entende muito bem
+7fba6c76fd67adb116953efbc43f61f76d950650861cf91994d79dc07099afd0;recomendado com relvas;1/23/25 13:46;Thaiga;@thaigao - IG;6;2024;"ela é muito criativa, entende muito bem
 o que diz no breifing e o público que
 tem, mas mal assessorada. Antes eu
 falava com o Caio, que é um cara super
@@ -138,18 +138,18 @@ muda completamente de segmento e
 não tem uma linha coesa no perfil";"A influenciadora é simples de
 trabalhar, mas o problema é no
 trato para chegar até ela"
-35f9624b5e6b3e77ad1805e27313493c6bbc47a043f4b2546366e18a8ab5f298;negativo;negativo;1/23/25 14:08;Malu Borges;maluborgesm;1;2023;Péssimo, não entregou nada, não sabe;Não contratem
-8da0aab91d1a9af0da8635c1e7c3f33ff23c7a5130fd09fdcb0ea196e2a3e6e9;indefinido;indefinido;1/23/25 14:08;Ana Clara;@anaclaraac;6;-;sAe pgruimir euimra  bernietrfeingga,  fnoãi om saarabvei lfhaozsear ,;No período do BBB ela dá muito
-ef6b22aa3a551b508fb0ed902f5fc9c2b086487e5bc8022bd586a51f05878cb4;indefinido;indefinido;1/23/25 14:09;Caio Castro;@caiocastro;2;2022;sPeregguuiu o briefing e super colaborou, por ainda!içoso demaaaaaaais. Não seguiu;"engajamento. Talvez ela esteja
+35f9624b5e6b3e77ad1805e27313493c6bbc47a043f4b2546366e18a8ab5f298;não recomendado;1/23/25 14:08;Malu Borges;maluborgesm;1;2023;Péssimo, não entregou nada, não sabe;Não contratem
+8da0aab91d1a9af0da8635c1e7c3f33ff23c7a5130fd09fdcb0ea196e2a3e6e9;indefinido;1/23/25 14:08;Ana Clara;@anaclaraac;6;-;sAe pgruimir euimra  bernietrfeingga,  fnoãi om saarabvei lfhaozsear ,;No período do BBB ela dá muito
+ef6b22aa3a551b508fb0ed902f5fc9c2b086487e5bc8022bd586a51f05878cb4;não recomendado;1/23/25 14:09;Caio Castro;@caiocastro;2;2022;sPeregguuiu o briefing e super colaborou, por ainda!içoso demaaaaaaais. Não seguiu;"engajamento. Talvez ela esteja
 Não vale a pena de jeito nenhum"
-aa5d626f94498213afd940732deb9718af2635129b5cb5e869f7216833e25171;indefinido;indefinido;1/23/25 14:09;Lucas Brobrio;@lucasbrobrio - instagram;9;2023;"oE xbcreielefinngte e d pivaurlegcaidao qr uceu lttiunrhaal,  gsreamvapdreo  o
+aa5d626f94498213afd940732deb9718af2635129b5cb5e869f7216833e25171;indefinido;1/23/25 14:09;Lucas Brobrio;@lucasbrobrio - instagram;9;2023;"oE xbcreielefinngte e d pivaurlegcaidao qr uceu lttiunrhaal,  gsreamvapdreo  o
 ccoonntteeúúdentregadoo  cd conoemla  uengteúdmos cajou muito e tivemos
 deilfuelraern pteosc kee ct.r iativos,
 Prerteocrno. Poréééém, na segunda entrega, sua eisnotrue dgea  véá rreiaasl.  rOe fCaçuõpeosm ( od eq ue não
 aad adeisad)e. lSa barrou todas as ideias BRIóO m ée e fxetzre cmhoarmaer ndtee  era eivlaa . eOn tcreognoteuú um conteúdo feijão com conhecido e utildizoa fdicoou horroroso.ssnescotnotus onraiao BRd
 Oa";"público dela é bem fiel e ela está
 em ascensão."
-770283fa01a99f11464456ca61c3557378719913eb25c5bb69e42b4cae01eb1a;positivo;positivo;1/23/25 14:09;Flávia Pavanelli;@flaviapavanelli;10;2022 / 2023;"cVlii esnotber ep aag Laanrdi oM caanroíseslaim, oe) a,  os iqtuuaeç ão da
+770283fa01a99f11464456ca61c3557378719913eb25c5bb69e42b4cae01eb1a;recomendado;1/23/25 14:09;Flávia Pavanelli;@flaviapavanelli;10;2022 / 2023;"cVlii esnotber ep aag Laanrdi oM caanroíseslaim, oe) a,  os iqtuuaeç ão da
 iFmlápvaiac téo up anroe ecindgaa. jEamlae én tboe qmu e não foi
 ctãoom bpeemte natses,i man cteonmaod ad,a t epmrim beoimra  gvoeszt.o
 eMsatés taic ore ec,l aampeasçaãro d ée m searis m paairsa  o time
@@ -178,7 +178,7 @@ mas apostaria que melhorou. Vale
 o investimento. Só não espere
 muita intimidade: ela costuma ser
 reservada, mas entrega direitinho."
-1eb98f78e1e93c857748e5815f3e9c2fb7f14e82daa554e895af627726ec03ac;misto;neutro;1/23/25 14:09;Caio Castro;caiocastro;7;2022;"Empresário muito organizado e
+1eb98f78e1e93c857748e5815f3e9c2fb7f14e82daa554e895af627726ec03ac;recomendado com relvas;1/23/25 14:09;Caio Castro;caiocastro;7;2022;"Empresário muito organizado e
 desenrolado, cheio de oportunidades
 adicionais, porém tudo muito caro.
 Qualquer coisa que você pedir para ele
@@ -193,7 +193,7 @@ aditivo de contrato. Escrevam
 TUDO que for falado em reunião
 de fechamento ou a conta vai ficar
 cara."
-23ea013d6ebac9b30043666cbf71ab4a0c4e00137a643c1168170c82163afce6;indefinido;indefinido;1/23/25 14:16;Dragbox;@dragbox;9;2024;"Dcoomisp qroumereidtiodsa!  cNoãmo  acos nehnetrceiag aasté.  então,
+23ea013d6ebac9b30043666cbf71ab4a0c4e00137a643c1168170c82163afce6;recomendado;1/23/25 14:16;Dragbox;@dragbox;9;2024;"Dcoomisp qroumereidtiodsa!  cNoãmo  acos nehnetrceiag aasté.  então,
 fFoizi einmdiocsa çaãlgou dnes  ucomnate aúndaoliss tcao. mE netlrae gpaa ra
 pdiofenrteunatl,e ns oc lmieenute csa, seola n seem d teedvieco rue fação,
 abatesntadnetme  noo b rreiesfuinltga dpoe.r fFeoitai bmaesntaten,t e
@@ -208,7 +208,7 @@ Cobram barato e são
 profissionais, aproveitem pq
 depois que furarem a bolha vai
 ser caro."
-83c02799fe8c57d93ba9d617c40f5ec29bbb83ca541ada06cc5657a732c8d61c;misto;neutro;1/23/25 14:17;Manu Gavassi;@manugavassi;6;nov.-24;"o vídeo ficou muito bom, mas
+83c02799fe8c57d93ba9d617c40f5ec29bbb83ca541ada06cc5657a732c8d61c;recomendado com relvas;1/23/25 14:17;Manu Gavassi;@manugavassi;6;nov.-24;"o vídeo ficou muito bom, mas
 mostrou disponível para regravar algo
 decepcionou, porque a expectativa era
 caso fosse preciso. Muito tranquila de se
@@ -224,15 +224,15 @@ manga pra não depender dela,
 tenha paciência e trabalhe com
 maior nível de detalhamento
 possível"
-2295abc537d87770a96c990bf2702f4c932b79b30b820f02dce2a11f89529373;positivo;positivo;1/23/25 14:17;Vinicius Cacofonias;@cacofonias;10;2024;"Experiência excelente. Super
+2295abc537d87770a96c990bf2702f4c932b79b30b820f02dce2a11f89529373;recomendado;1/23/25 14:17;Vinicius Cacofonias;@cacofonias;10;2024;"Experiência excelente. Super
 profissional. Entrega até antes do prazo,
 faz alterações sem reclamar. Escreve
 roteiros muito engraçados. O agente
 dele é ótimo também, super simpático e
 fácil de dialogar.";"Totalmente recomendado. Sem
 dúvida vamos fazer outras vezes."
-9b62e4e4915cc3ef65c5570bdc4c28bfa0563a316bc623d673788a403f24cba3;negativo;negativo;1/22/25 11:54;Alvxaro;alvxaro;2;2024;Terrível... Não trabalha com o que foi combinado! Some, não dá satisfação, não entrega! Parece que a marca está fazendo um favor para ele em pagar muitoooo caro pra fazer o básico de um influenciador! Não respeita a equipe! Porém tem números! Não espere datas cumpridas...;(Não informado)
-024c792bd5fc8e33f1d5e7198994fa6456fbef4d5515ff323ec4c7311c0fcc13;positivo;positivo;1/22/25 13:55;Alvaro;@alvxaro;9;2024;Foi o maior budget da campanha e entregou muito resultado. A agenda dele estava apertada, atrasou um pouco na entrega, mas a marca gostou do resultado e entrou nas campanhas mais engajadas da semana. Se quiserem alcance e engajamento, vai sem medo. Só pedir para a marca um pouco de paciência em trabalhar o cronograma de publicação.;(Não informado)
-ed61e45728c472b4f61c2c0fcd98f96999ebf5e944a9c56947c86d30d74c1458;misto;neutro;1/22/25 18:21;Álvaro;alvxaro;7;jun.-25;Complicado, ele entrega muito e o conteúdo foi o que mais performou na campanha, porém ele não segue briefing e roteiro, fez o conteúdo totalmente fora e como ele quis. Foi muito bom no final, mas, se o cliente for mais controlador, vai sofrer com ele. Bom conteúdo, boa entrega, mas não segue briefing e formatos sugeridos.;(Não informado)
-779d4471ebbf1d0951576c5f04d0c3bed38d0af6df08d664edc96d8d629bc8a6;positivo;positivo;1/23/25 11:49;Alvaro Xaro;@alvxaro;10;2022/2023;Foi incrível, ele sempre era atencioso (mudamos algumas datas por conta de viagens, mas ele foi super solícito nas postagens). Seguia o briefing, dava ideias e seguia o que foi acordado. Recomendo, desde que seja bem alinhado e tenha uma verba legal para ter o resultado que ele pode entregar.;(Não informado)
-7a7025a3c79a3c751777f049bf73d87f6cc7e856090df32f49304634ae1a9164;negativo;negativo;1/23/25 11:50;alvaro xaro;@alvxaro;5;2023;O conteúdo performou super bem, mas ele destratou toda a equipe de produção e xingou a representante da marca por ter pedido para fazer algo que já havia sido alinhado anteriormente. Parece que faz um favor. Se quer resultado, faça, mas ele é uma péssima pessoa fora das câmeras.;(Não informado)
+9b62e4e4915cc3ef65c5570bdc4c28bfa0563a316bc623d673788a403f24cba3;não recomendado;1/22/25 11:54;Alvxaro;alvxaro;2;2024;Terrível... Não trabalha com o que foi combinado! Some, não dá satisfação, não entrega! Parece que a marca está fazendo um favor para ele em pagar muitoooo caro pra fazer o básico de um influenciador! Não respeita a equipe! Porém tem números! Não espere datas cumpridas...;(Não informado)
+024c792bd5fc8e33f1d5e7198994fa6456fbef4d5515ff323ec4c7311c0fcc13;recomendado;1/22/25 13:55;Alvaro;@alvxaro;9;2024;Foi o maior budget da campanha e entregou muito resultado. A agenda dele estava apertada, atrasou um pouco na entrega, mas a marca gostou do resultado e entrou nas campanhas mais engajadas da semana. Se quiserem alcance e engajamento, vai sem medo. Só pedir para a marca um pouco de paciência em trabalhar o cronograma de publicação.;(Não informado)
+ed61e45728c472b4f61c2c0fcd98f96999ebf5e944a9c56947c86d30d74c1458;recomendado com relvas;1/22/25 18:21;Álvaro;alvxaro;7;jun.-25;Complicado, ele entrega muito e o conteúdo foi o que mais performou na campanha, porém ele não segue briefing e roteiro, fez o conteúdo totalmente fora e como ele quis. Foi muito bom no final, mas, se o cliente for mais controlador, vai sofrer com ele. Bom conteúdo, boa entrega, mas não segue briefing e formatos sugeridos.;(Não informado)
+779d4471ebbf1d0951576c5f04d0c3bed38d0af6df08d664edc96d8d629bc8a6;recomendado;1/23/25 11:49;Alvaro Xaro;@alvxaro;10;2022/2023;Foi incrível, ele sempre era atencioso (mudamos algumas datas por conta de viagens, mas ele foi super solícito nas postagens). Seguia o briefing, dava ideias e seguia o que foi acordado. Recomendo, desde que seja bem alinhado e tenha uma verba legal para ter o resultado que ele pode entregar.;(Não informado)
+7a7025a3c79a3c751777f049bf73d87f6cc7e856090df32f49304634ae1a9164;não recomendado;1/23/25 11:50;alvaro xaro;@alvxaro;5;2023;O conteúdo performou super bem, mas ele destratou toda a equipe de produção e xingou a representante da marca por ter pedido para fazer algo que já havia sido alinhado anteriormente. Parece que faz um favor. Se quer resultado, faça, mas ele é uma péssima pessoa fora das câmeras.;(Não informado)
