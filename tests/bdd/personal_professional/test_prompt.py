@@ -8,10 +8,10 @@ class TestPrompt:
     @pytest.fixture(autouse=True)
     def setup(self):
         """Carrega o DataFrame antes de cada teste"""
-        self.df_silver = pd.read_csv("data/silver/data/personal_professional/gpt-4o-mini_v2/training.csv", delimiter=";")
+        self.df_silver = pd.read_csv("data/silver/data/personal_professional/gpt-4o-mini/v1/training.csv", delimiter=";")
         self.df_raw = pd.read_csv("tests/data/training.csv")
 
-    def test_given_llm_receives_one_record_invalid_then_should_return_one_less(self):
+    def test_should_return_equal_number_rows(self):
         """Verifica se o DataFrame não está vazio"""
         assert self.df_silver.nickname.count() == self.df_raw["Qual o @ (identifica a rede)"].count()
         assert not self.df_silver.empty, "O DataFrame está vazio!"

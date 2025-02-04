@@ -6,8 +6,10 @@ import pandas as pd
 
 from src.utils.dto import ConfigModel, GPTPrompt
 from src.utils.logger import logger
+from src.utils.util import timing_decorator
 
 
+@timing_decorator
 def call_gpt(config: ConfigModel, messages: List) -> pd.DataFrame:
     try:
         GPTPrompt(messages=messages)

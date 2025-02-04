@@ -1,5 +1,6 @@
 import os
-from typing import  Callable
+from typing import Callable
+import hashlib
 
 import pandas as pd
 
@@ -7,6 +8,12 @@ from src.silver.llm.gpt import call_gpt
 from src.silver.prompt.prompt import Prompt
 from src.utils.dto import ConfigModel
 from src.utils.logger import logger
+from src.utils.util import timing_decorator
+
+
+def generate_hash(row):
+    combined_string = str(row['datetime']) + str(row['nickname'])
+    return hashlib.sha256(combined_string.encode()).hexdigest()
 
 
 class SentimentClassifier:
@@ -31,11 +38,13 @@ class SentimentClassifier:
         df_response = self.llm(config=self.model, messages=messages)
         self.__save_data(df=df, df_response=df_response, prompt=prompt)
 
+    @timing_decorator
     def __load_data(self):
         logger.info(f"load file {self.path_file} ")
         df = pd.read_csv(self.path_file)
         df.columns = ["datetime", "name", "nickname", "evaluation_note",
                       "date_work", "review", "recommendation"]
+        df['hash'] = df.apply(generate_hash, axis=1)
         return df
 
     def __create_folder_if_not_exist(self, prompt: Prompt) -> str:
@@ -50,9 +59,23 @@ class SentimentClassifier:
             os.mkdir(dst_path)
         return dst_path
 
+    @timing_decorator
     def __save_data(self, df: pd.DataFrame, df_response: pd.DataFrame, prompt: Prompt):
         dst_path = self.__create_folder_if_not_exist(prompt)
         dst_file = os.path.join(dst_path, os.path.split(self.path_file)[-1])
-        df_final = pd.merge(df_response, df, on="nickname", how="inner")
+        total_input = df.count()["hash"]
+        total_output = df_response.count()["hash"]
+        df_final = pd.merge(df_response, df, on="hash", how="left")
+        total_final = df_final.count()["hash"]
+        try:
+            assert total_input == total_output
+        except AssertionError:
+            logger.warning(
+                f'DIFF total records input {total_input} records output {total_output}')
+        try:
+            assert total_final == total_output
+        except AssertionError as e:
+            logger.error(f'DIFF total records input {total_input} records output {total_output}, records final {total_final}')
+            raise e
         df_final.to_csv(dst_file, index=False, sep=";")
         logger.info(f"Salved with success file: {dst_file}")

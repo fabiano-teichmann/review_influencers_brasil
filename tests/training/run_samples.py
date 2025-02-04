@@ -8,10 +8,10 @@ def run_sample_prompt(version: str, prompt_name: str):
 
 if __name__ == "__main__":
     # personal_professional
-    #run_sample_prompt(version="v1", prompt_name="personal_professional")
-    #run_sample_prompt(version="v2", prompt_name="personal_professional")
+    run_sample_prompt(version="v1", prompt_name="personal_professional")
+    run_sample_prompt(version="v2", prompt_name="personal_professional")
     # strengths_weaknesses
-    #run_sample_prompt(version="v1", prompt_name="strengths_weaknesses")
-    #run_sample_prompt(version="v2", prompt_name="strengths_weaknesses")
+    run_sample_prompt(version="v1", prompt_name="strengths_weaknesses")
+    run_sample_prompt(version="v2", prompt_name="strengths_weaknesses")
     # recommendation
     run_sample_prompt(version="v1", prompt_name="recommendation")
