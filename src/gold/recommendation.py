@@ -4,12 +4,12 @@ import duckdb
 
 from src.utils.list_files import get_list_files_csv
 from src.utils.logger import logger
-from src.utils.setup import SetupPersonalProfessional
+from src.utils.setup import SetupRecommendation
 
-class PersistPersonalProfessional:
-    def __init__(self, setup: SetupPersonalProfessional):
-        if not isinstance(setup, SetupPersonalProfessional):
-            raise TypeError(f"Expected setup to be an instance of SetupPersonalProfessional, but got {type(setup).__name__}")
+class PersistRecommendation:
+    def __init__(self, setup: SetupRecommendation):
+        if not isinstance(setup, SetupRecommendation):
+            raise TypeError(f"Expected setup to be an instance of SetupRecommendation, but got {type(setup).__name__}")
         self.setup = setup
         self.conn = duckdb.connect(database='data/gold/influencer.duckdb', read_only=False)
         self.files = self._get_files()
@@ -29,22 +29,14 @@ class PersistPersonalProfessional:
         table_name = self.setup.name
         version = f"{self.setup.model}/{self.setup.version}"
         temp_table = 'temp_data'
-        # self.conn.execute(f"drop table {table_name}")
+
         self.conn.execute(
             f"""
             CREATE OR REPLACE TEMP TABLE {temp_table} AS
             SELECT 
-                    hash::VARCHAR AS hash, 
-                    personality::VARCHAR AS personality,  
-                    professional::VARCHAR AS professional, 
-                    datetime::VARCHAR AS datetime,  
-                    name::VARCHAR AS name,  
-                    nickname::VARCHAR AS nickname,  
-                    evaluation_note::INTEGER AS evaluation_note,  
-                    date_work::VARCHAR AS date_work,  
-                    review::VARCHAR AS review,
-                    recommendation::VARCHAR AS recommendation, 
-                   '{version}' AS version_{self.setup.name}
+                hash,
+                recommends_influencer,
+                '{version}' AS version_{self.setup.name}
             FROM read_csv_auto('{file}', HEADER=TRUE, SEP=';')
         """)
 
@@ -65,3 +57,4 @@ class PersistPersonalProfessional:
             INSERT INTO {table_name}
             SELECT * FROM {temp_table};
         """)
+
