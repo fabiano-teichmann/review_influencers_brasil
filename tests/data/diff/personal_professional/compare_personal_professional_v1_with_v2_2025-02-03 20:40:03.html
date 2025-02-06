@@ -1,0 +1,463 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comparativo de prompts</title>
+    </head>
+    <body>
+    
+        <div>
+            <h1> Análise comparativa de resultados do prompt: personal_professional </h1> </br>
+            <h3> Comparando Modelo: gpt-4o-mini Versão Prompt: v1 com Comparando Modelo: gpt-4o-mini Versão Prompt: v2 </h3>
+            </br>
+            <b> Data: 2025-02-03 20:40:03 </b>
+            <h3>Legendas</h3>
+            <ul>
+                <li><span style="display: inline-block; width: 60px; height: 20px; background-color: green; color: white;">&#9608;</span> Sem divergência (verde)</li>
+                <li><span style="display: inline-block; width: 60px; height: 20px; background-color: orange; color: white;">&#9608;</span> Divergência de personalidade (amarelo)</li>
+                <li><span style="display: inline-block; width: 60px; height: 20px; background-color: yellow; color: black;">&#9608;</span> Divergência de profissionalismo (laranja)</li>
+                <li><span style="display: inline-block; width: 60px; height: 20px; background-color: red; color: white;">&#9608;</span> Divergência total (vermelho)</li>
+            </ul>
+        </div>
+    <style type="text/css">
+#T_077ca_row0_col0, #T_077ca_row0_col1, #T_077ca_row0_col2, #T_077ca_row0_col3, #T_077ca_row0_col4, #T_077ca_row0_col5, #T_077ca_row1_col0, #T_077ca_row1_col1, #T_077ca_row1_col2, #T_077ca_row1_col3, #T_077ca_row1_col4, #T_077ca_row1_col5, #T_077ca_row3_col0, #T_077ca_row3_col1, #T_077ca_row3_col2, #T_077ca_row3_col3, #T_077ca_row3_col4, #T_077ca_row3_col5, #T_077ca_row4_col0, #T_077ca_row4_col1, #T_077ca_row4_col2, #T_077ca_row4_col3, #T_077ca_row4_col4, #T_077ca_row4_col5, #T_077ca_row5_col0, #T_077ca_row5_col1, #T_077ca_row5_col2, #T_077ca_row5_col3, #T_077ca_row5_col4, #T_077ca_row5_col5, #T_077ca_row6_col0, #T_077ca_row6_col1, #T_077ca_row6_col2, #T_077ca_row6_col3, #T_077ca_row6_col4, #T_077ca_row6_col5, #T_077ca_row7_col0, #T_077ca_row7_col1, #T_077ca_row7_col2, #T_077ca_row7_col3, #T_077ca_row7_col4, #T_077ca_row7_col5, #T_077ca_row8_col0, #T_077ca_row8_col1, #T_077ca_row8_col2, #T_077ca_row8_col3, #T_077ca_row8_col4, #T_077ca_row8_col5, #T_077ca_row9_col0, #T_077ca_row9_col1, #T_077ca_row9_col2, #T_077ca_row9_col3, #T_077ca_row9_col4, #T_077ca_row9_col5, #T_077ca_row10_col0, #T_077ca_row10_col1, #T_077ca_row10_col2, #T_077ca_row10_col3, #T_077ca_row10_col4, #T_077ca_row10_col5, #T_077ca_row11_col0, #T_077ca_row11_col1, #T_077ca_row11_col2, #T_077ca_row11_col3, #T_077ca_row11_col4, #T_077ca_row11_col5, #T_077ca_row12_col0, #T_077ca_row12_col1, #T_077ca_row12_col2, #T_077ca_row12_col3, #T_077ca_row12_col4, #T_077ca_row12_col5, #T_077ca_row13_col0, #T_077ca_row13_col1, #T_077ca_row13_col2, #T_077ca_row13_col3, #T_077ca_row13_col4, #T_077ca_row13_col5, #T_077ca_row14_col0, #T_077ca_row14_col1, #T_077ca_row14_col2, #T_077ca_row14_col3, #T_077ca_row14_col4, #T_077ca_row14_col5, #T_077ca_row15_col0, #T_077ca_row15_col1, #T_077ca_row15_col2, #T_077ca_row15_col3, #T_077ca_row15_col4, #T_077ca_row15_col5, #T_077ca_row16_col0, #T_077ca_row16_col1, #T_077ca_row16_col2, #T_077ca_row16_col3, #T_077ca_row16_col4, #T_077ca_row16_col5, #T_077ca_row18_col0, #T_077ca_row18_col1, #T_077ca_row18_col2, #T_077ca_row18_col3, #T_077ca_row18_col4, #T_077ca_row18_col5, #T_077ca_row19_col0, #T_077ca_row19_col1, #T_077ca_row19_col2, #T_077ca_row19_col3, #T_077ca_row19_col4, #T_077ca_row19_col5, #T_077ca_row21_col0, #T_077ca_row21_col1, #T_077ca_row21_col2, #T_077ca_row21_col3, #T_077ca_row21_col4, #T_077ca_row21_col5, #T_077ca_row23_col0, #T_077ca_row23_col1, #T_077ca_row23_col2, #T_077ca_row23_col3, #T_077ca_row23_col4, #T_077ca_row23_col5, #T_077ca_row24_col0, #T_077ca_row24_col1, #T_077ca_row24_col2, #T_077ca_row24_col3, #T_077ca_row24_col4, #T_077ca_row24_col5, #T_077ca_row25_col0, #T_077ca_row25_col1, #T_077ca_row25_col2, #T_077ca_row25_col3, #T_077ca_row25_col4, #T_077ca_row25_col5, #T_077ca_row27_col0, #T_077ca_row27_col1, #T_077ca_row27_col2, #T_077ca_row27_col3, #T_077ca_row27_col4, #T_077ca_row27_col5, #T_077ca_row28_col0, #T_077ca_row28_col1, #T_077ca_row28_col2, #T_077ca_row28_col3, #T_077ca_row28_col4, #T_077ca_row28_col5 {
+  background-color: green;
+  color: black;
+}
+#T_077ca_row2_col0, #T_077ca_row2_col1, #T_077ca_row2_col2, #T_077ca_row2_col3, #T_077ca_row2_col4, #T_077ca_row2_col5, #T_077ca_row17_col0, #T_077ca_row17_col1, #T_077ca_row17_col2, #T_077ca_row17_col3, #T_077ca_row17_col4, #T_077ca_row17_col5, #T_077ca_row20_col0, #T_077ca_row20_col1, #T_077ca_row20_col2, #T_077ca_row20_col3, #T_077ca_row20_col4, #T_077ca_row20_col5, #T_077ca_row22_col0, #T_077ca_row22_col1, #T_077ca_row22_col2, #T_077ca_row22_col3, #T_077ca_row22_col4, #T_077ca_row22_col5 {
+  background-color: red;
+  color: black;
+}
+#T_077ca_row26_col0, #T_077ca_row26_col1, #T_077ca_row26_col2, #T_077ca_row26_col3, #T_077ca_row26_col4, #T_077ca_row26_col5 {
+  background-color: yellow;
+  color: black;
+}
+</style>
+<table id="T_077ca">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_077ca_level0_col0" class="col_heading level0 col0" >nickname</th>
+      <th id="T_077ca_level0_col1" class="col_heading level0 col1" >review</th>
+      <th id="T_077ca_level0_col2" class="col_heading level0 col2" >professional_v1</th>
+      <th id="T_077ca_level0_col3" class="col_heading level0 col3" >professional_v2</th>
+      <th id="T_077ca_level0_col4" class="col_heading level0 col4" >personality_v1</th>
+      <th id="T_077ca_level0_col5" class="col_heading level0 col5" >personality_v2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_077ca_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_077ca_row0_col0" class="data row0 col0" >@gildovigor</td>
+      <td id="T_077ca_row0_col1" class="data row0 col1" >No começo ele é meio tímido, mas vai
+se soltando e conquista todo mundo no
+set. É empenhado, prestativo e
+atencioso. Vale cada centavo cobrado,
+pois entrega qualidade e simpatia.</td>
+      <td id="T_077ca_row0_col2" class="data row0 col2" >positivo</td>
+      <td id="T_077ca_row0_col3" class="data row0 col3" >positivo</td>
+      <td id="T_077ca_row0_col4" class="data row0 col4" >positivo</td>
+      <td id="T_077ca_row0_col5" class="data row0 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_077ca_row1_col0" class="data row1 col0" >@mohindi</td>
+      <td id="T_077ca_row1_col1" class="data row1 col1" >Um caos, simplesmente impossível
+conseguir agenda para que ele publique,
+não faz uma unidade de entrega fora do
+escopo e tivemos que mover toda a
+proposta de campanha e entregas para
+se encaixar na agenda dele de viagens
+e outros compromissos... ele tinha um
+contrato de embaixador de marca (o
+mais caro do orçamento disponível para
+influs, com o mesmo escopo dos com
+menor orçamento) e mesmo assim não
+fazia qualquer tipo de esforço pra fazer
+uma entrega no prazo. Entrega muita
+qualidade nos conteúdos, mas muito
+estrelinha e difícil de trabalhar,
+principalmente considerando o tanto que
+cobra.</td>
+      <td id="T_077ca_row1_col2" class="data row1 col2" >negativo</td>
+      <td id="T_077ca_row1_col3" class="data row1 col3" >negativo</td>
+      <td id="T_077ca_row1_col4" class="data row1 col4" >negativo</td>
+      <td id="T_077ca_row1_col5" class="data row1 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_077ca_row2_col0" class="data row2 col0" >@bibibailas</td>
+      <td id="T_077ca_row2_col1" class="data row2 col1" >A entrega em si foi boa, entregou o que
+foi combinado, único ponto negativo de
+estresse foi a assessora que parecia
+não fazer ideia de como funciona
+trabalhar com influenciador. Passou o ar
+de ter colocado uma parente X pra fazer
+o trabalho e isso pode ser um pouco
+exaustivo. Mas a entrega em si deu
+certo e gerou bons resultados!</td>
+      <td id="T_077ca_row2_col2" class="data row2 col2" >neutro</td>
+      <td id="T_077ca_row2_col3" class="data row2 col3" >positivo</td>
+      <td id="T_077ca_row2_col4" class="data row2 col4" >misto</td>
+      <td id="T_077ca_row2_col5" class="data row2 col5" >neutro</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_077ca_row3_col0" class="data row3 col0" >@paola_antonini - IG</td>
+      <td id="T_077ca_row3_col1" class="data row3 col1" >terrível! ela não cumpre prazos e mente
+descaradamente sobre as coisas. mas o
+pior de tudo é a sua assessora que é
+EXTREMAMENTE grossa e arrogante.</td>
+      <td id="T_077ca_row3_col2" class="data row3 col2" >negativo</td>
+      <td id="T_077ca_row3_col3" class="data row3 col3" >negativo</td>
+      <td id="T_077ca_row3_col4" class="data row3 col4" >negativo</td>
+      <td id="T_077ca_row3_col5" class="data row3 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_077ca_row4_col0" class="data row4 col0" >@pear.lara</td>
+      <td id="T_077ca_row4_col1" class="data row4 col1" >Uma grande querida! Traz ideias legais
+nas reuniões de briefing, aceita
+melhorias e ajustes numa boa e vem
+melhorando o conteúdo pras marcas
+cada vez mais.</td>
+      <td id="T_077ca_row4_col2" class="data row4 col2" >positivo</td>
+      <td id="T_077ca_row4_col3" class="data row4 col3" >positivo</td>
+      <td id="T_077ca_row4_col4" class="data row4 col4" >positivo</td>
+      <td id="T_077ca_row4_col5" class="data row4 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_077ca_row5_col0" class="data row5 col0" >@barretovs - ig</td>
+      <td id="T_077ca_row5_col1" class="data row5 col1" >Pressão mais baixa que a minha, era
+difícil entregar algo criativo. Mas
+acredito que deva ter melhorado.</td>
+      <td id="T_077ca_row5_col2" class="data row5 col2" >neutro</td>
+      <td id="T_077ca_row5_col3" class="data row5 col3" >neutro</td>
+      <td id="T_077ca_row5_col4" class="data row5 col4" >neutro</td>
+      <td id="T_077ca_row5_col5" class="data row5 col5" >neutro</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_077ca_row6_col0" class="data row6 col0" >@tchulim - Instagram</td>
+      <td id="T_077ca_row6_col1" class="data row6 col1" >Muito bom! Super criativa, entendeu o
+briefing e trouxe sua criatividade para o
+conteúdo da marca. O alcance não é
+gigante, mas compensa na qualidade da
+entrega.</td>
+      <td id="T_077ca_row6_col2" class="data row6 col2" >positivo</td>
+      <td id="T_077ca_row6_col3" class="data row6 col3" >positivo</td>
+      <td id="T_077ca_row6_col4" class="data row6 col4" >positivo</td>
+      <td id="T_077ca_row6_col5" class="data row6 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_077ca_row7_col0" class="data row7 col0" >blogueirinha</td>
+      <td id="T_077ca_row7_col1" class="data row7 col1" >Desesperador!!! Tudo precisa ser do
+jeito da gata e a equipe dela não ajuda
+em nada, só complicam ainda mais o
+que já foi alinhado e combinado em
+briefing. Se for depender dela pra
+entregar, esperem algo bem mais ou
+menos e se for ter qualquer set com
+ela.... Preparem-se pra pagar extra de
+locação e equipe.</td>
+      <td id="T_077ca_row7_col2" class="data row7 col2" >negativo</td>
+      <td id="T_077ca_row7_col3" class="data row7 col3" >negativo</td>
+      <td id="T_077ca_row7_col4" class="data row7 col4" >negativo</td>
+      <td id="T_077ca_row7_col5" class="data row7 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_077ca_row8_col0" class="data row8 col0" >Vinisenno</td>
+      <td id="T_077ca_row8_col1" class="data row8 col1" >EXTRAORDINÁRIO!
+O garoto tem uma qualidade impecável
+de entrega!
+Incrível!! Cumpre prazos!!</td>
+      <td id="T_077ca_row8_col2" class="data row8 col2" >positivo</td>
+      <td id="T_077ca_row8_col3" class="data row8 col3" >positivo</td>
+      <td id="T_077ca_row8_col4" class="data row8 col4" >positivo</td>
+      <td id="T_077ca_row8_col5" class="data row8 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_077ca_row9_col0" class="data row9 col0" >@lucas.lima</td>
+      <td id="T_077ca_row9_col1" class="data row9 col1" >ELE É ÓTIMOOO! Se dedica ao roteiro,
+veste a camisa da marca e é SUPER
+simpático.</td>
+      <td id="T_077ca_row9_col2" class="data row9 col2" >positivo</td>
+      <td id="T_077ca_row9_col3" class="data row9 col3" >positivo</td>
+      <td id="T_077ca_row9_col4" class="data row9 col4" >positivo</td>
+      <td id="T_077ca_row9_col5" class="data row9 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_077ca_row10_col0" class="data row10 col0" >@camilaloures</td>
+      <td id="T_077ca_row10_col1" class="data row10 col1" >HORRÍVEL. Ela na publi foi a mesma
+coisa que nada. Um boneco de posto se
+mexendo, roteiro péssimo...</td>
+      <td id="T_077ca_row10_col2" class="data row10 col2" >negativo</td>
+      <td id="T_077ca_row10_col3" class="data row10 col3" >negativo</td>
+      <td id="T_077ca_row10_col4" class="data row10 col4" >negativo</td>
+      <td id="T_077ca_row10_col5" class="data row10 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_077ca_row11_col0" class="data row11 col0" >@brunamarquezine</td>
+      <td id="T_077ca_row11_col1" class="data row11 col1" >Mal assessorada, faz apenas o mínimo
+e muito mal feito. Não lê brief, faz as
+entregas completamente
+desorganizadas e amadoras, teve publi
+que tava acordado para ser às 20h e ela
+subiu de madrugada. A assessoria dela
+não responde emails, não se atenta nem
+ao período de validade contratual. Não
+consegue sequer compreender uma
+cláusula simples.</td>
+      <td id="T_077ca_row11_col2" class="data row11 col2" >negativo</td>
+      <td id="T_077ca_row11_col3" class="data row11 col3" >negativo</td>
+      <td id="T_077ca_row11_col4" class="data row11 col4" >negativo</td>
+      <td id="T_077ca_row11_col5" class="data row11 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_077ca_row12_col0" class="data row12 col0" >@livia</td>
+      <td id="T_077ca_row12_col1" class="data row12 col1" >péssima. equipe desorganizada. não
+segue briefing e entrega um conteúdo
+bem qualquer coisa. além de números
+super baixos.</td>
+      <td id="T_077ca_row12_col2" class="data row12 col2" >negativo</td>
+      <td id="T_077ca_row12_col3" class="data row12 col3" >negativo</td>
+      <td id="T_077ca_row12_col4" class="data row12 col4" >negativo</td>
+      <td id="T_077ca_row12_col5" class="data row12 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_077ca_row13_col0" class="data row13 col0" >carladiaz</td>
+      <td id="T_077ca_row13_col1" class="data row13 col1" >fAredepqeusaendicartdemente demçãeo  fnaozteárv eulm, s boonmst rtarar empre aboa unalhso dos
+produtos folios,a enldao é
+mEaprianro uuvcmeioiatsa apdmuorra do contextobealni.  ptAeap rora ob uvremieitfaoin updrao fcisoslliaobn apla, roa marca de
+
+gquaset acor nmfearise  quma cg de cada
+psuropjertom. eOrc raedtour eon nool  iqslivdeou excepcional às suasnuaeeldred
+.  Eeoibi
+rec omenaolre vàme stpeurellpideardea rpermsoopit
+dações.orcioe p nead éir
+odd ierepestotaoismq fueiceno tmeu  ápcxoroibmpraorn dcdieoon saads aea sB dtaotc uiora
+dnvaoi Ll omar teteerxc oparadbroiat.a enntec hqeure a g sausato gue plaadrae irfaaz, er
+eo xvtírdaepoo.lando o saldo limite combinado.</td>
+      <td id="T_077ca_row13_col2" class="data row13 col2" >indefinido</td>
+      <td id="T_077ca_row13_col3" class="data row13 col3" >indefinido</td>
+      <td id="T_077ca_row13_col4" class="data row13 col4" >indefinido</td>
+      <td id="T_077ca_row13_col5" class="data row13 col5" >indefinido</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_077ca_row14_col0" class="data row14 col0" >@thaigao - IG</td>
+      <td id="T_077ca_row14_col1" class="data row14 col1" >ela é muito criativa, entende muito bem
+o que diz no breifing e o público que
+tem, mas mal assessorada. Antes eu
+falava com o Caio, que é um cara super
+gente fina e desenrolado, além de
+responder rápido, mas agora que ele
+não cuida mais da carreira dela... ta
+beeeem ruim, só reparar em como ela
+muda completamente de segmento e
+não tem uma linha coesa no perfil</td>
+      <td id="T_077ca_row14_col2" class="data row14 col2" >neutro</td>
+      <td id="T_077ca_row14_col3" class="data row14 col3" >neutro</td>
+      <td id="T_077ca_row14_col4" class="data row14 col4" >positivo</td>
+      <td id="T_077ca_row14_col5" class="data row14 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_077ca_row15_col0" class="data row15 col0" >maluborgesm</td>
+      <td id="T_077ca_row15_col1" class="data row15 col1" >Péssimo, não entregou nada, não sabe</td>
+      <td id="T_077ca_row15_col2" class="data row15 col2" >negativo</td>
+      <td id="T_077ca_row15_col3" class="data row15 col3" >negativo</td>
+      <td id="T_077ca_row15_col4" class="data row15 col4" >negativo</td>
+      <td id="T_077ca_row15_col5" class="data row15 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_077ca_row16_col0" class="data row16 col0" >@anaclaraac</td>
+      <td id="T_077ca_row16_col1" class="data row16 col1" >sAe pgruimir euimra  bernietrfeingga,  fnoãi om saarabvei lfhaozsear ,</td>
+      <td id="T_077ca_row16_col2" class="data row16 col2" >indefinido</td>
+      <td id="T_077ca_row16_col3" class="data row16 col3" >indefinido</td>
+      <td id="T_077ca_row16_col4" class="data row16 col4" >indefinido</td>
+      <td id="T_077ca_row16_col5" class="data row16 col5" >indefinido</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_077ca_row17_col0" class="data row17 col0" >@caiocastro</td>
+      <td id="T_077ca_row17_col1" class="data row17 col1" >sPeregguuiu o briefing e super colaborou, por ainda!içoso demaaaaaaais. Não seguiu</td>
+      <td id="T_077ca_row17_col2" class="data row17 col2" >indefinido</td>
+      <td id="T_077ca_row17_col3" class="data row17 col3" >negativo</td>
+      <td id="T_077ca_row17_col4" class="data row17 col4" >indefinido</td>
+      <td id="T_077ca_row17_col5" class="data row17 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_077ca_row18_col0" class="data row18 col0" >@lucasbrobrio - instagram</td>
+      <td id="T_077ca_row18_col1" class="data row18 col1" >oE xbcreielefinngte e d pivaurlegcaidao qr uceu lttiunrhaal,  gsreamvapdreo  o
+ccoonntteeúúdentregadoo  cd conoemla  uengteúdmos cajou muito e tivemos
+deilfuelraern pteosc kee ct.r iativos,
+Prerteocrno. Poréééém, na segunda entrega, sua eisnotrue dgea  véá rreiaasl.  rOe fCaçuõpeosm ( od eq ue não
+aad adeisad)e. lSa barrou todas as ideias BRIóO m ée e fxetzre cmhoarmaer ndtee  era eivlaa . eOn tcreognoteuú um conteúdo feijão com conhecido e utildizoa fdicoou horroroso.ssnescotnotus onraiao BRd
+Oa</td>
+      <td id="T_077ca_row18_col2" class="data row18 col2" >indefinido</td>
+      <td id="T_077ca_row18_col3" class="data row18 col3" >indefinido</td>
+      <td id="T_077ca_row18_col4" class="data row18 col4" >indefinido</td>
+      <td id="T_077ca_row18_col5" class="data row18 col5" >indefinido</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_077ca_row19_col0" class="data row19 col0" >@flaviapavanelli</td>
+      <td id="T_077ca_row19_col1" class="data row19 col1" >cVlii esnotber ep aag Laanrdi oM caanroíseslaim, oe) a,  os iqtuuaeç ão da
+iFmlápvaiac téo up anroe ecindgaa. jEamlae én tboe qmu e não foi
+ctãoom bpeemte natses,i man cteonmaod ad,a t epmrim beoimra  gvoeszt.o
+eMsatés taic ore ec,l aampeasçaãro d ée m searis m paairsa  o time
+dreeslae,r vqaudea a, cah gaa qtau ee nfatrzeegnad. oO o p MroÍbNleIMmOa  é
+oes ptaavi,a q fuaez efrnedqou eon MteÁmXeInMteO  dmáe smo com
+oo rcieancthaêç õaeltso .sem embasamento, mas se
+posiciona como especialista em
+marketing. Ele é um BIG atraso na vida
+dela. Seria um pouco melhor se fosse a
+mãe que a acompanhasse, Luciana, que
+apesar de não ser da área tem uma
+educação impecável e tem ótima
+reputação entre os clientes. ATENÇÃO:
+A saída da antiga assessora, Débora
+Gerardi, foi uma benção para todos, ao
+contrário do que saiu nos portais. Ela é
+completamente despreparada, vivia
+bajulando a Flávia e todas as celebs,
+mas era burra e arrogante com os
+funcionários, especialmente os de
+classe mais baixa. Minha opinião em off:
+acho que Débora queria ser famosa e
+vivia numa energia de frustração. Era o
+cão essa menina. Lamento por todos ali.</td>
+      <td id="T_077ca_row19_col2" class="data row19 col2" >positivo</td>
+      <td id="T_077ca_row19_col3" class="data row19 col3" >positivo</td>
+      <td id="T_077ca_row19_col4" class="data row19 col4" >positivo</td>
+      <td id="T_077ca_row19_col5" class="data row19 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_077ca_row20_col0" class="data row20 col0" >caiocastro</td>
+      <td id="T_077ca_row20_col1" class="data row20 col1" >Empresário muito organizado e
+desenrolado, cheio de oportunidades
+adicionais, porém tudo muito caro.
+Qualquer coisa que você pedir para ele
+custa múltiplos de R$25-30mil. Não
+converteu em venda e nem
+engajamento. Tinha agenda bem
+complicados. O Caio em sí é muito legal
+e humilde. Atualmente custa mais de
+60k/mês</td>
+      <td id="T_077ca_row20_col2" class="data row20 col2" >neutro</td>
+      <td id="T_077ca_row20_col3" class="data row20 col3" >negativo</td>
+      <td id="T_077ca_row20_col4" class="data row20 col4" >misto</td>
+      <td id="T_077ca_row20_col5" class="data row20 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_077ca_row21_col0" class="data row21 col0" >@dragbox</td>
+      <td id="T_077ca_row21_col1" class="data row21 col1" >Dcoomisp qroumereidtiodsa!  cNoãmo  acos nehnetrceiag aasté.  então,
+fFoizi einmdiocsa çaãlgou dnes  ucomnate aúndaoliss tcao. mE netlrae gpaa ra
+pdiofenrteunatl,e ns oc lmieenute csa, seola n seem d teedvieco rue fação,
+abatesntadnetme  noo b rreiesfuinltga dpoe.r fFeoitai bmaesntaten,t e
+pcoamrcueniriac aeç pãaor tfiáccipila, ztivearo d eunraronltaed toosd,oo
+aprdoocreasrisao t.e Gr raa ovapvoart ucnoimda adse  rdoeu ptraasb anlah ar
+ecomr  dalag om maraciao,r  mcoams  seelems ,s peor idse p merafonremiraam
+
+bóbemvia e;  oou pvúiab lmicuoi tdoe bleesm é o breiemnt aeçnõgeasja ed os.e</td>
+      <td id="T_077ca_row21_col2" class="data row21 col2" >indefinido</td>
+      <td id="T_077ca_row21_col3" class="data row21 col3" >indefinido</td>
+      <td id="T_077ca_row21_col4" class="data row21 col4" >indefinido</td>
+      <td id="T_077ca_row21_col5" class="data row21 col5" >indefinido</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_077ca_row22_col0" class="data row22 col0" >@manugavassi</td>
+      <td id="T_077ca_row22_col1" class="data row22 col1" >o vídeo ficou muito bom, mas
+mostrou disponível para regravar algo
+decepcionou, porque a expectativa era
+caso fosse preciso. Muito tranquila de se
+receber um roteiro muito mais criativo,
+trabalhar e ainda traz um bônus incrível
+diferente, inovador. Ela e a assessora
+que é o Kodinha(Pet)!
+eram educadas pessoalmente, mas foi
+bem chatinha pra trabalhar. Decidia uma
+coisa, depois mudava, um inferno.
+Estrela</td>
+      <td id="T_077ca_row22_col2" class="data row22 col2" >neutro</td>
+      <td id="T_077ca_row22_col3" class="data row22 col3" >misto</td>
+      <td id="T_077ca_row22_col4" class="data row22 col4" >misto</td>
+      <td id="T_077ca_row22_col5" class="data row22 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_077ca_row23_col0" class="data row23 col0" >@cacofonias</td>
+      <td id="T_077ca_row23_col1" class="data row23 col1" >Experiência excelente. Super
+profissional. Entrega até antes do prazo,
+faz alterações sem reclamar. Escreve
+roteiros muito engraçados. O agente
+dele é ótimo também, super simpático e
+fácil de dialogar.</td>
+      <td id="T_077ca_row23_col2" class="data row23 col2" >positivo</td>
+      <td id="T_077ca_row23_col3" class="data row23 col3" >positivo</td>
+      <td id="T_077ca_row23_col4" class="data row23 col4" >positivo</td>
+      <td id="T_077ca_row23_col5" class="data row23 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row24" class="row_heading level0 row24" >24</th>
+      <td id="T_077ca_row24_col0" class="data row24 col0" >alvxaro</td>
+      <td id="T_077ca_row24_col1" class="data row24 col1" >Terrível... Não trabalha com o que foi combinado! Some, não dá satisfação, não entrega! Parece que a marca está fazendo um favor para ele em pagar muitoooo caro pra fazer o básico de um influenciador! Não respeita a equipe! Porém tem números! Não espere datas cumpridas...</td>
+      <td id="T_077ca_row24_col2" class="data row24 col2" >negativo</td>
+      <td id="T_077ca_row24_col3" class="data row24 col3" >negativo</td>
+      <td id="T_077ca_row24_col4" class="data row24 col4" >negativo</td>
+      <td id="T_077ca_row24_col5" class="data row24 col5" >negativo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row25" class="row_heading level0 row25" >25</th>
+      <td id="T_077ca_row25_col0" class="data row25 col0" >@alvxaro</td>
+      <td id="T_077ca_row25_col1" class="data row25 col1" >Foi o maior budget da campanha e entregou muito resultado. A agenda dele estava apertada, atrasou um pouco na entrega, mas a marca gostou do resultado e entrou nas campanhas mais engajadas da semana. Se quiserem alcance e engajamento, vai sem medo. Só pedir para a marca um pouco de paciência em trabalhar o cronograma de publicação.</td>
+      <td id="T_077ca_row25_col2" class="data row25 col2" >positivo</td>
+      <td id="T_077ca_row25_col3" class="data row25 col3" >positivo</td>
+      <td id="T_077ca_row25_col4" class="data row25 col4" >positivo</td>
+      <td id="T_077ca_row25_col5" class="data row25 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row26" class="row_heading level0 row26" >26</th>
+      <td id="T_077ca_row26_col0" class="data row26 col0" >alvxaro</td>
+      <td id="T_077ca_row26_col1" class="data row26 col1" >Complicado, ele entrega muito e o conteúdo foi o que mais performou na campanha, porém ele não segue briefing e roteiro, fez o conteúdo totalmente fora e como ele quis. Foi muito bom no final, mas, se o cliente for mais controlador, vai sofrer com ele. Bom conteúdo, boa entrega, mas não segue briefing e formatos sugeridos.</td>
+      <td id="T_077ca_row26_col2" class="data row26 col2" >neutro</td>
+      <td id="T_077ca_row26_col3" class="data row26 col3" >positivo</td>
+      <td id="T_077ca_row26_col4" class="data row26 col4" >misto</td>
+      <td id="T_077ca_row26_col5" class="data row26 col5" >misto</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row27" class="row_heading level0 row27" >27</th>
+      <td id="T_077ca_row27_col0" class="data row27 col0" >@alvxaro</td>
+      <td id="T_077ca_row27_col1" class="data row27 col1" >Foi incrível, ele sempre era atencioso (mudamos algumas datas por conta de viagens, mas ele foi super solícito nas postagens). Seguia o briefing, dava ideias e seguia o que foi acordado. Recomendo, desde que seja bem alinhado e tenha uma verba legal para ter o resultado que ele pode entregar.</td>
+      <td id="T_077ca_row27_col2" class="data row27 col2" >positivo</td>
+      <td id="T_077ca_row27_col3" class="data row27 col3" >positivo</td>
+      <td id="T_077ca_row27_col4" class="data row27 col4" >positivo</td>
+      <td id="T_077ca_row27_col5" class="data row27 col5" >positivo</td>
+    </tr>
+    <tr>
+      <th id="T_077ca_level0_row28" class="row_heading level0 row28" >28</th>
+      <td id="T_077ca_row28_col0" class="data row28 col0" >@alvxaro</td>
+      <td id="T_077ca_row28_col1" class="data row28 col1" >O conteúdo performou super bem, mas ele destratou toda a equipe de produção e xingou a representante da marca por ter pedido para fazer algo que já havia sido alinhado anteriormente. Parece que faz um favor. Se quer resultado, faça, mas ele é uma péssima pessoa fora das câmeras.</td>
+      <td id="T_077ca_row28_col2" class="data row28 col2" >negativo</td>
+      <td id="T_077ca_row28_col3" class="data row28 col3" >negativo</td>
+      <td id="T_077ca_row28_col4" class="data row28 col4" >negativo</td>
+      <td id="T_077ca_row28_col5" class="data row28 col5" >negativo</td>
+    </tr>
+  </tbody>
+</table>

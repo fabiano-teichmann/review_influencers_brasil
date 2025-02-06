@@ -1,3 +1,8 @@
 tabula-py
 openai
 pandas
+pydantic
+pytest
+tabulate
+Jinja2
+duckdb
