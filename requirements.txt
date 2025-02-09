@@ -6,3 +6,4 @@ pytest
 tabulate
 Jinja2
 duckdb
+chainlit

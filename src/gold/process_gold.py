@@ -35,7 +35,7 @@ def save_versions_prompts(directory):
                     contents = f.read()
                     name, version = full_path.split("/")[-2:]
                     insert = f"""INSERT INTO versions_prompts (name, version, description, datetime_modified)
-                                VALUES ('{name}', '{version}', '{contents}', '{datetime.now()}');"""
+                                VALUES ('{name}', '{version.replace('.txt', '')}', '{contents}', '{datetime.now()}');"""
                     conn.execute(insert)
             except Exception as e:
                 print(f"Error opening file {full_path}: {e}")

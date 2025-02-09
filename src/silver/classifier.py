@@ -27,7 +27,7 @@ class SentimentClassifier:
     def run(self):
         df = self.__load_data()
         csv_data_string = df.to_csv(index=False)
-        prompt = Prompt(csv_data_string=csv_data_string, prompt_name=self.name_prompt,
+        prompt = Prompt(data_string=csv_data_string, prompt_name=self.name_prompt,
                         prompt_version=self.version_prompt)
         messages = [
             {"role": "system",
