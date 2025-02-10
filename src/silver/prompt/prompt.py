@@ -17,7 +17,7 @@ class Prompt:
 
         """
         self.data_string = data_string
-        self.name_prompt = prompt_name
+        self.prompt_name = prompt_name
         self.prompt_version = prompt_version
 
     @property
@@ -28,11 +28,11 @@ class Prompt:
     @property
     def system(self) -> str:
         path_file = os.path.join("src/silver/prompt/prompts",
-                                 self.name_prompt,
+                                 self.prompt_name,
                                  f"{self.prompt_version}.txt")
         try:
             prompt = open(path_file).read()
             return prompt
         except FileNotFoundError:
-            logger.error(f"Not found prompt {self.name_prompt} with version {self.prompt_version}")
+            logger.error(f"Not found prompt {self.prompt_name} with version {self.prompt_version}")
             raise FileNotFoundError(path_file)

@@ -8,7 +8,8 @@ class TestPrompt:
     @pytest.fixture(autouse=True)
     def setup(self):
         """Carrega o DataFrame antes de cada teste"""
-        self.df_silver = pd.read_csv("data/silver/data/personal_professional/gpt-4o-mini/v1/training.csv", delimiter=";")
+        self.df_silver = pd.read_csv("data/silver/data/personal_professional/gpt-4o-mini/v1/training.csv",
+                                     delimiter=";")
         self.df_raw = pd.read_csv("tests/data/training.csv")
 
     def test_should_return_equal_number_rows(self):

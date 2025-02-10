@@ -7,3 +7,4 @@ tabulate
 Jinja2
 duckdb
 chainlit
+matplotlib

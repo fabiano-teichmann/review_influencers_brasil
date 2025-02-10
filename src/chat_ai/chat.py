@@ -70,20 +70,24 @@ async def on_message(message: cl.Message):
     explain = data["explain"]
     suggestion = data["suggestion"]
     query = data["query"]
+    print(data["plot"])
     results = get_result(query)
+
     if isinstance(results, pd.DataFrame):
+        elements = [
+            cl.Text(name="Query", content=query, language="sql"),
+            cl.Text(name="Explicação", content=explain),
+            cl.Text(name="Resultado", content=results.to_markdown()),
+            cl.Text(name="Sugestão", content=suggestion)
+        ]
         await cl.Message(content=explain,
-                         elements=[
-                                 cl.Text(name="Query", content=query, display="inline"),
-                                 cl.Text(name="Explicação", content=explain, display="inline"),
-                                 cl.Dataframe(data=results, display="inline", name="Resultado"),
-                                cl.Text(name="Sugestão", content=suggestion, display="inline")
-                                ]
+                         elements=elements
                          ).send()
+
     else:
         await cl.Message(content=results,
                          elements=[
-                             cl.Text(name="Query", content=query, display="inline"),
+                             cl.Text(name="Query", content=query, display="inline", language="sql"),
                              cl.Text(name="Explicação", content=explain, display="inline"),
                              cl.Text(name="Sugestão", content=suggestion, display="inline")
                          ]

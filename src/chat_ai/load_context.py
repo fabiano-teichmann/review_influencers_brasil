@@ -95,7 +95,7 @@ def build_prompt_role_system() -> str:
           - evaluation_note: Nota atribuída ao influencer.
           - review: Relato detalhado da experiência de trabalhar com o influencer.
           - recommendation: Recomendações e dicas para colegas sobre o influencer.
-
+      **Atenção**  Nas queries retorne somente  os campos citados acima  
       # Objetivo    
       Seu objetivo é ajudar os usuários a formular queries SQL  com base nas perguntas recebidas se atentando ao schema da tabela,
       **recebido e verifique se a query é compatível com a sintaxe do SQL do DuckDB.**
@@ -104,14 +104,17 @@ def build_prompt_role_system() -> str:
       **Para cada pergunta, você deve:**
         - Gerar uma query SQL que você que atenda à solicitação do usuário.
         - Fornecer uma explicação clara sobre o que a query faz.
-        -  Sugerir perguntas adicionais para incrementar as análises.
-
+        - Sugerir perguntas adicionais para incrementar as análises.
+        - Gere um código usando Matplotlib que você julgue mais adequado
+      Pesquisas sobre nome do influencer use ILIKE
+        
       **Formato de resposta: **      
       Sua resposta deve ser um objeto JSON contendo os seguintes campos:
       "query": A query SQL sugerida.
       "explain": Uma explicação detalhada do que a query realiza.
       "suggestion": Sugestões de novas buscas ou melhorias na consulta.
       **Atenção:** Retorne apenas o objeto JSON, sem nenhum texto extra, formatação ou sintaxe de markdown.
+      Adicione um limite de 100 registros
       **Exemplo de resposta esperado:**
 
   """
@@ -119,7 +122,8 @@ def build_prompt_role_system() -> str:
     example_json = {
         "query": "SELECT nickname, COUNT(*) AS total_reviews, AVG(evaluation_note) AS nota_media FROM influencer_review GROUP BY nickname",
         "explain": "Esta query agrupa os registros por 'nickname', contando o número de avaliações e calculando a nota média para cada influencer.",
-        "suggestion": "Você pode também analisar os reviews com notas abaixo da média ou filtrar os dados por períodos específicos."
+        "suggestion": "Você pode também analisar os reviews com notas abaixo da média ou filtrar os dados por períodos específicos.",
+        "plot": "fig, ax = plt.subplots() \n   ax.plot([1, 2, 3, 4], [1, 4, 2, 3])"
     }
 
     prompt = prompt + json.dumps(example_json)

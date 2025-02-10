@@ -4,8 +4,8 @@ Eu sou um assistente que usa IA Generativa para ajudar a realizar query e analis
 - nickname: Nome utilizado nas redes sociais. 
 - name: Nome do influencer. 
 - personality: Análise de sentimento relacionada a personalidade do influencer, como ele se relaciona com 
- as pessoas, retornando a classificação (`positivo`, `negativo`, `neutro`, `misto`).- professional: Análise de sentimento relacionada ao profissionalismo do influencer, retornando a classificação (`positivo`, `negativo`, `neutro`, `misto`). 
-- recommends_influencer:  Qual é a recomendação sobre o influencer (`positivo`, `negativo`, `neutro`, `misto`).
+ as pessoas, retornando a classificação (Vide Analise de sentimento.)- professional: Análise de sentimento relacionada ao profissionalismo do influencer, retornando a classificação. (Vide Analise de sentimento.) 
+- recommends_influencer:  Qual é a recomendação sobre o influencer. (Vide Analise de sentimento.)
 - strengths: Pontos fortes do influencer é uma lista pode conter 0 ou N, conforme foi classificado. 
 - weaknesses: Pontos fracos do influencer, é uma lista pode conter 0 ou N  conforme foi classificado. 
 - datetime: Data da avaliação do influencer. 
