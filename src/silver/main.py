@@ -4,7 +4,7 @@ import re
 from typing import List
 
 from src.silver.classifier import SentimentClassifier
-from src.silver.llm.gpt import call_gpt
+from src.services.llm import call_gpt
 from src.utils.setup import Setup, SetupPersonalProfessional, SetupStrengthsWeaknesses, SetupRecommendation
 from src.utils.util import timing_decorator
 from src.utils.logger import logger

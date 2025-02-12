@@ -10,7 +10,7 @@ from src.utils.util import timing_decorator
 
 
 @timing_decorator
-def call_gpt(config: ConfigModel, messages: List) -> pd.DataFrame:
+def call_gpt(messages: List, config: ConfigModel = ConfigModel()) -> pd.DataFrame:
     try:
         GPTPrompt(messages=messages)
     except Exception as e:

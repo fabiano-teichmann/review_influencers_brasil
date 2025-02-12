@@ -1,0 +1,38 @@
+-- pontos fortes mais citados
+SELECT
+    evaluation_note,
+    CAST(json_extract_path_text(ponto_forte, '$.unnest') AS VARCHAR) AS ponto_forte, COUNT(*) AS total_citacoes
+FROM influencer_review
+CROSS JOIN LATERAL UNNEST(strengths) AS ponto_forte
+WHERE evaluation_note >= 8
+GROUP BY ponto_forte
+ORDER BY total_citacoes DESC
+LIMIT 100;
+
+
+-- pontos fracos mais citados
+SELECT
+    evaluation_note,
+    CAST(json_extract_path_text(ponto_fraco, '$.unnest') AS VARCHAR) AS ponto_fraco, COUNT(*) AS total_citacoes
+FROM influencer_review
+CROSS JOIN LATERAL UNNEST(weaknesses) AS ponto_fraco
+WHERE evaluation_note >= 8
+GROUP BY ponto_fraco
+ORDER BY total_citacoes DESC
+LIMIT 100;
+
+SELECT
+    evaluation_note,
+    CAST(json_extract_path_text(ponto_fraco, '$.unnest') AS VARCHAR) AS ponto_fraco,
+    COUNT(*) AS total_citacoes
+FROM influencer_review
+CROSS JOIN LATERAL UNNEST(weaknesses) AS ponto_fraco
+WHERE evaluation_note >= 8
+GROUP BY evaluation_note, ponto_fraco  -- Adicionado evaluation_note ao GROUP BY
+ORDER BY total_citacoes DESC
+LIMIT 100;
+
+me traga os pontos fracos mais citados dos influencer com nota mais baixa
+
+
+me traga os pontos fortes mais citados dos influencer com melhor notas

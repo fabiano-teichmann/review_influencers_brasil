@@ -4,7 +4,7 @@ import hashlib
 
 import pandas as pd
 
-from src.silver.llm.gpt import call_gpt
+from src.services.llm import call_gpt
 from src.silver.prompt.prompt import Prompt
 from src.utils.dto import ConfigModel
 from src.utils.logger import logger
