@@ -1,10 +1,13 @@
 import json
 
+import duckdb
+
+
 class PromptChat:
-    def __init__(self, conn):
-        self.conn = conn
-        self.sample_data = self.conn.execute("select * from influencer_review limit 25").df().to_csv(index=False)
-        self.schema = self.conn.execute("DESCRIBE influencer_review;").df().to_csv(index=False)
+    def __init__(self):
+        with duckdb.connect(database='data/gold/influencer.duckdb', read_only=True) as conn:
+            self.sample_data = conn.execute("select * from influencer_review limit 25").df().to_csv(index=False)
+            self.schema = conn.execute("DESCRIBE influencer_review;").df().to_csv(index=False)
 
 
     def prompt_fix_query(self, query: str, error: str):
@@ -93,5 +96,4 @@ class PromptChat:
      
         """
         prompt = prompt + self.example_response_expected
-        print(prompt)
         return prompt

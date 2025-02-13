@@ -7,42 +7,19 @@ from openai import AsyncOpenAI
 import chainlit as cl
 
 from src.chat_ai.prompt import PromptChat
+from src.services.llm.gpt import call_gpt_async
 from src.utils.dto import ConfigModel
 from src.utils.util import timing_decorator
 from src.utils.logger import logger
 
-client = AsyncOpenAI()
+
 
 cl.instrument_openai()
 config = ConfigModel()
-conn = duckdb.connect(database='data/gold/influencer.duckdb', read_only=True)
-prompt = PromptChat(conn)
-
-@timing_decorator
-async def call_llm(content: str):
-    response = await client.chat.completions.create(
-        messages=[
-            {
-                "content": prompt.prompt_role_system,
-                "role": "system"
-            },
-            {
-                "content": content,
-                "role": "user"
-            }
-        ],
-        model=config.model,
-        temperature=config.temperature
-    )
-    gpt_reply = response.choices[0].message.content
-    data = json.loads(gpt_reply)
-    return data
-
+prompt = PromptChat()
 
 @cl.on_chat_start
 async def main():
-    # conn = duckdb.connect(database='data/gold/influencer.duckdb', read_only=True)
-    # prompt = PromptChat(conn)
     msg = ("Olá sou um Chat que um GenAi para lhe ajudar a fazer analise de dados de reviews de influencer, "
            "que foram avaliados supostamente por pessoas que trabalham com eles em campanhas de marketing. "
            "Em agências de marketing. \n")
@@ -53,7 +30,8 @@ async def main():
 def get_result(query: str) -> Union[pd.DataFrame, str]:
     try:
         if query:
-            df = conn.execute(query).df()
+            with duckdb.connect(database='data/gold/influencer.duckdb', read_only=True) as conn:
+                df = conn.execute(query).df()
             print(query)
             return df
         return ""
@@ -83,7 +61,7 @@ async def response_chat(data:dict):
 @timing_decorator
 @cl.on_message
 async def on_message(message: cl.Message):
-    data = await call_llm(content=message.content)
+    data = await call_gpt_async(content_system=prompt.prompt_role_system, content_user=message.content)
     await  response_chat(data)
 
 
@@ -109,7 +87,7 @@ async def on_action(action: cl.Action):
                 name="action_fix_query",
                 icon="circle-x",
                 payload={"query": action.payload["query"], "error": results},
-                label="Analise os dados"
+                label="Corrija o erro"
             )
         ]
         await cl.Message(content="Erro rodar a query",
@@ -119,14 +97,14 @@ async def on_action(action: cl.Action):
 @cl.action_callback("action_analyze_data")
 async def on_action_analyze_data(action: cl.Action):
     message = prompt.prompt_analyze_data(query=action.payload["query"], data=action.payload["data"])
-    data = await call_llm(content=message)
+    data = await call_gpt_async(content_system=prompt.prompt_role_system, content_user=message)
     await cl.Message(content=data["explain"], elements=[cl.Text(name="Sugestão", content=data["suggestion"])]).send()
 
 
 @cl.action_callback("action_fix_query")
 async def on_fix_query(action: cl.Action):
-    message = prompt.prompt_fix_query(query=action.payload["query"], error=action.payload["data"])
-    data = await call_llm(content=message)
+    message = prompt.prompt_fix_query(query=action.payload["query"], error=action.payload["error"])
+    data = await call_gpt_async(content_system=prompt.prompt_role_system, content_user=message)
     await response_chat(data)
 
 
