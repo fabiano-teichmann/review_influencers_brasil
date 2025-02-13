@@ -2,7 +2,6 @@ import os
 
 import duckdb
 
-# from src.utils.database import conn
 from src.utils.list_files import get_list_files_csv
 from src.utils.logger import logger
 from src.utils.setup import SetupStrengthsWeaknesses
