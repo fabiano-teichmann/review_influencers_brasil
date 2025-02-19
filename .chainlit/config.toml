@@ -53,11 +53,13 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "Assistant"
+name = "Assistente analista de reviews"
 
 # default_theme = "dark"
 
-# layout = "wide"
+layout = "wide"
+
+# default_theme = "dark"
 
 # Description of the assistant. This is used for HTML tags.
 # description = ""

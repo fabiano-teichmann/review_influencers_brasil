@@ -49,9 +49,10 @@ class PromptChat:
         result_expected = """
          **Formato de resposta: **      
           Sua resposta deve ser um objeto JSON contendo os seguintes campos:
-          "query": A query SQL sugerida. Quero que ela esteja com indentação
+          "query": Retorne a query SQL formatada para melhor leitura, com quebras de linha e indentação adequada.
           "explain": Uma explicação detalhada do que a query realiza.
           "suggestion": Sugestões de novas buscas ou melhorias na consulta.
+          "resume": Faça um resumo do que foi feito, para ser passado para a role assistant
           **Atenção:** Retorne apenas o objeto JSON, sem nenhum texto extra, formatação ou sintaxe de markdown.
           Adicione um limite de 100 registros
           **Exemplo de resposta esperado:**
@@ -62,6 +63,7 @@ class PromptChat:
             "query": "SELECT nickname, COUNT(*) AS total_reviews FROM influencer_review GROUP BY nickname",
             "explain": "Esta query agrupa os registros por 'nickname', contando o número de avaliações e calculando a nota média para cada influencer.",
             "suggestion": "Você pode também analisar os reviews com notas abaixo da média ou filtrar os dados por períodos específicos.",
+            "resume": "Foi agrupado as notas de reviews apartir do nickname"
         }, indent=4)
         return  result_expected + example
 

@@ -31,25 +31,32 @@ def call_gpt(messages: List, config: ConfigModel = ConfigModel()) -> pd.DataFram
     return pd.read_json(data)
 
 
-@timing_decorator
-async def call_gpt_async(content_system: str, content_user: str):
-    client = AsyncOpenAI()
+def set_history(cl, prompt: str, role: str) ->list:
+    history = cl.user_session.get("history", [])
+    history.append({"role": role, "content": prompt})
+    cl.user_session.set("history", history[-8:])
+    return cl.user_session.get("history", [])
 
-    config = ConfigModel()
-    response = await client.chat.completions.create(
-        messages=[
-            {
+
+@timing_decorator
+async def call_gpt_async(cl, content_system: str, content_user: str):
+    client = AsyncOpenAI()
+    history = set_history(cl, prompt=content_user, role="user")
+    messages = [{
                 "content": content_system,
                 "role": "system"
-            },
-            {
-                "content": content_user,
-                "role": "user"
-            }
-        ],
+            }] + history
+    config = ConfigModel()
+    response = await client.chat.completions.create(
+        messages=messages,
         model=config.model,
         temperature=config.temperature
     )
     gpt_reply = response.choices[0].message.content
-    data = json.loads(gpt_reply)
+    try:
+        data = json.loads(gpt_reply)
+    except Exception as e:
+        data = {"explain": gpt_reply, "suggestion": "", "query": ""}
+        logger.error(e)
+    set_history(cl, prompt=data["resume"], role="assistant")
     return data

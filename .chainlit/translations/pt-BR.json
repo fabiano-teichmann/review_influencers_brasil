@@ -1,0 +1,214 @@
+ {
+    "common": {
+        "actions": {
+            "cancel": "Cancelar",
+            "confirm": "Confirmar",
+            "continue": "Continuar",
+            "goBack": "Voltar",
+            "reset": "Redefinir",
+            "submit": "Enviar"
+        },
+        "status": {
+            "loading": "Carregando...",
+            "error": {
+                "default": "Ocorreu um erro",
+                "serverConnection": "Não foi possível conectar ao servidor"
+            }
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Faça login para acessar o aplicativo",
+            "form": {
+                "email": {
+                    "label": "Endereço de e-mail",
+                    "required": "O e-mail é um campo obrigatório"
+                },
+                "password": {
+                    "label": "Senha",
+                    "required": "A senha é um campo obrigatório"
+                },
+                "actions": {
+                    "signin": "Entrar"
+                },
+                "alternativeText": {
+                    "or": "OU"
+                }
+            },
+            "errors": {
+                "default": "Não foi possível fazer login",
+                "signin": "Tente fazer login com uma conta diferente",
+                "oauthSignin": "Tente fazer login com uma conta diferente",
+                "redirectUriMismatch": "O URI de redirecionamento não corresponde à configuração do aplicativo oauth",
+                "oauthCallback": "Tente fazer login com uma conta diferente",
+                "oauthCreateAccount": "Tente fazer login com uma conta diferente",
+                "emailCreateAccount": "Tente fazer login com uma conta diferente",
+                "callback": "Tente fazer login com uma conta diferente",
+                "oauthAccountNotLinked": "Para confirmar sua identidade, faça login com a mesma conta que você usou originalmente",
+                "emailSignin": "Não foi possível enviar o e-mail",
+                "emailVerify": "Verifique seu e-mail, um novo e-mail foi enviado",
+                "credentialsSignin": "Falha no login. Verifique se os detalhes fornecidos estão corretos",
+                "sessionRequired": "Faça login para acessar esta página"
+            }
+        },
+        "provider": {
+            "continue": "Continuar com {{provider}}"
+        }
+    },
+    "chat": {
+        "input": {
+            "placeholder": "Digite sua mensagem aqui...",
+            "actions": {
+                "send": "Enviar mensagem",
+                "stop": "Parar Tarefa",
+                "attachFiles": "Anexar arquivos"
+            }
+        },
+        "speech": {
+            "start": "Começar a gravar",
+            "stop": "Parar de gravar",
+            "connecting": "Conectando"
+        },
+        "fileUpload": {
+            "dragDrop": "Arraste e solte arquivos aqui",
+            "browse": "Procurar arquivos",
+            "sizeLimit": "Limite:",
+            "errors": {
+                "failed": "Falha ao enviar",
+                "cancelled": "Envio cancelado de"
+            }
+        },
+        "messages": {
+            "status": {
+                "using": "Usando",
+                "used": "Usado"
+            },
+            "actions": {
+                "copy": {
+                    "button": "Copiar para a área de transferência",
+                    "success": "Copiado!"
+                }
+            },
+            "feedback": {
+                "positive": "Útil",
+                "negative": "Não útil",
+                "edit": "Editar feedback",
+                "dialog": {
+                    "title": "Adicionar um comentário",
+                    "submit": "Enviar feedback"
+                },
+                "status": {
+                    "updating": "Atualizando",
+                    "updated": "Feedback atualizado"
+                }
+            }
+        },
+        "history": {
+            "title": "Últimas Entradas",
+            "empty": "Tão vazio...",
+            "show": "Mostrar histórico"
+        },
+        "settings": {
+            "title": "Painel de configurações"
+        },
+        "watermark": "Feito com"
+    },
+    "threadHistory": {
+        "sidebar": {
+            "title": "Chats Anteriores",
+            "filters": {
+                "search": "Pesquisar",
+                "placeholder": "Pesquisar conversas..."
+            },
+            "timeframes": {
+                "today": "Hoje",
+                "yesterday": "Ontem",
+                "previous7days": "Últimos 7 dias",
+                "previous30days": "Últimos 30 dias"
+            },
+            "empty": "Nenhum tópico encontrado",
+            "actions": {
+                "close": "Fechar barra lateral",
+                "open": "Abrir barra lateral"
+            }
+        },
+        "thread": {
+            "untitled": "Conversa sem título",
+            "menu": {
+                "rename": "Renomear",
+                "delete": "Excluir"
+            },
+            "actions": {
+                "delete": {
+                    "title": "Confirmar exclusão",
+                    "description": "Isso excluirá o tópico, bem como suas mensagens e elementos. Esta ação não pode ser desfeita",
+                    "success": "Chat excluído",
+                    "inProgress": "Excluindo chat"
+                },
+                "rename": {
+                    "title": "Renomear Tópico",
+                    "description": "Digite um novo nome para este tópico",
+                    "form": {
+                        "name": {
+                            "label": "Nome",
+                            "placeholder": "Digite o novo nome"
+                        }
+                    },
+                    "success": "Tópico renomeado!",
+                    "inProgress": "Renomeando tópico"
+                }
+            }
+        }
+    },
+    "navigation": {
+        "header": {
+            "chat": "Chat",
+            "readme": "Leia-me",
+            "theme": {
+                "light": "Tema Claro",
+                "dark": "Tema Escuro",
+                "system": "Seguir Sistema"
+            }
+        },
+        "newChat": {
+            "button": "Novo Chat",
+            "dialog": {
+                "title": "Criar Novo Chat",
+                "description": "Isso limpará seu histórico de chat atual. Tem certeza que deseja continuar?",
+                "tooltip": "Novo Chat"
+            }
+        },
+        "user": {
+            "menu": {
+                "settings": "Configurações",
+                "settingsKey": "C",
+                "apiKeys": "Chaves de API",
+                "logout": "Sair"
+            }
+        }
+    },
+    "apiKeys": {
+        "title": "Chaves de API Necessárias",
+        "description": "Para usar este aplicativo, as seguintes chaves de API são necessárias. As chaves são armazenadas no armazenamento local do seu dispositivo.",
+        "success": {
+            "saved": "Salvo com sucesso"
+        }
+    },
+    "alerts": {
+        "info": "Informação",
+        "note": "Nota",
+        "tip": "Dica",
+        "important": "Importante",
+        "warning": "Aviso",
+        "caution": "Cuidado",
+        "debug": "Depuração",
+        "example": "Exemplo",
+        "success": "Sucesso",
+        "help": "Ajuda",
+        "idea": "Ideia",
+        "pending": "Pendente",
+        "security": "Segurança",
+        "beta": "Beta",
+        "best-practice": "Melhores Práticas"
+    }
+}
